@@ -2,4 +2,5 @@
 
 TODO: write a python script that first prints "hello world!"
 """
-print('Hello world!')
+# this is a command
+print("Hallo world!")
