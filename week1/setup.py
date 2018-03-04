@@ -1,6 +1,5 @@
 import os
 # install virtualenv
-
 # create virtualenv
 # on macOS /anaconda3/bin/conda create -y  --name codeenv python=3.6
 os.system('conda create -y  --name codeenv python=3.6')
