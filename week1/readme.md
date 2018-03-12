@@ -1,4 +1,3 @@
-TODO: Reflect on what you learned this week and what is still unclear.
 This course make me know that this term we mainly focused machine learning and hardware, and using them in an abstracted form, what’s more, practiced to data analysis and storytelling.
 Concrete content :
 1.This class professor show some pictures and videos for us . Those make us know clearly that what we will study in the next time.
