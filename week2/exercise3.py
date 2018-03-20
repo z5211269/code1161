@@ -8,9 +8,11 @@ def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
 
     Look into modulo division using the '%' operator as one way of doing this.
-    """
-    pass
-
+    """ 
+    if a_number%2==1:
+          return True 
+    else:
+          return False 
 
 def fix_it(moves=True, should_move=True):
     """Decide what to do.
@@ -23,8 +25,16 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    pass
-
+    if moves is True:
+       if should_move is True:
+      return "No Problem"
+ else:
+      return "Duct Tape"
+  else :if should_move is True:
+       return "WD-40"
+    else:
+       return "No Problem"
+        
 
 def loops_1a():
     """Make 10 stars.
@@ -33,18 +43,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    pass
-
-
-def star_map():
-    """Use a map to make stars and bangs.
-
-    Using a map, return a list of 10 items, each one a string with exacly
-    one star in it if the index is odd and exactly one exclamation mark
-    if it's even. Reuse the is odd function that you've already written.
-    E.g.: ["!", "*", "!", "*", "!", "*", "!", "*", "!", "*"]
-    """
-    pass
+    returnlist = []
+  for x in range (1, 11):
+      returnlist.append （"*")
+    return (returnlist)
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -55,8 +57,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    pass
-
+    returnlist = []
+for x in range (1, 6):
+    returnlist.append("#")
+    return(returnlist)
 
 def loops_2():
     """Make a big square starfield.
@@ -76,7 +80,11 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    pass
+    returnlist = []
+    for i in range (0, 10):
+        tmp.append("*")
+        returnlist.append(tmp)
+        return(returnlist)
 
 
 def loops_3():
@@ -100,10 +108,15 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    pass
+returnlist= []
+for i in range(0, 10):
+    tem = []
+    for j in range(0, 10):
+        tmp.append(i)
+        returnlist.append（tmp）
+        return returnlist
 
-
-def loops_4():
+     def loops_4():
     """Make a block of numbers that rises left to right.
 
     Return this:
@@ -118,7 +131,13 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    pass
+    returnlist = []
+    for i in range(0, 10)：
+        tmp = []
+        for j in range(0, 10):
+            tmp.append(j)
+        returnlist.append(tmp)
+        return returnlist
 
 
 def loops_5():
@@ -143,7 +162,15 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    pass
+    returnlist = []
+    for i in range(0, 10):
+        tmp = []
+        for j in range(0, 5):
+            tmp.append("（i"+ str(i) + ", j" + str(j) + "), ")
+            returnlist.append(tmp)
+            return returnlist
+
+        
 
 
 def loops_6():
@@ -166,7 +193,14 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    pass
+    returnlist = []
+    for i in range（0， 10）：
+        tmp = []
+        for j in range (0, i):
+            tmp.append(j)
+            returnlist.append(tmp)
+      return returnlist
+        
 
 
 def loops_7():
@@ -190,8 +224,18 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    pass
-
+    returnlist = []
+    for i in range(0, 5):
+        tmp =[]
+        for j in range(0, 10):
+            tmp.append("*")
+if i + j < 5:
+    tmp[j]= " "
+    asterisk = i+5
+    if j > asterisk:
+        tmp[j]= " "
+        returnlist.append(tmp)
+        return (returnlist)
 
 def lp(some_kind_of_list, exercise_name):
     """Help to see what's going on.
