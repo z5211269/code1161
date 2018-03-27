@@ -43,10 +43,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    returnlist = []
-  for x in range (1, 11):
-      returnlist.append （"*")
-    return (returnlist)
+   empty_list = []
+   for i in range(10):
+       empty_list.qppend('*')
+       return empty_list
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -57,10 +57,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    returnlist = []
-for x in range (1, 6):
-    returnlist.append("#")
-    return(returnlist)
+  empty_list = []
+  for i in range(number_of_items):
+      empty_list.append(symbol)
+      return empty_list
 
 def loops_2():
     """Make a big square starfield.
@@ -80,12 +80,13 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    returnlist = []
-    for i in range (0, 10):
-        tmp.append("*")
-        returnlist.append(tmp)
-        return(returnlist)
-
+   empty_list = []
+   for i in range (10):
+       another_list = []
+       for j in range(10):
+           another_list.append('*')
+           empty_list.append(another_list)
+           return empty_list
 
 def loops_3():
     """Make a rising block of numbers.
@@ -108,13 +109,13 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-returnlist= []
-for i in range(0, 10):
-    tem = []
-    for j in range(0, 10):
-        tmp.append(i)
-        returnlist.append（tmp）
-        return returnlist
+ outer_list = []
+    for i in range(10)：
+        inner_list = []
+        for j in range(10):
+            inner_list.append(str(i))
+        outer_list.append(inner_list)
+        return outer_list
 
      def loops_4():
     """Make a block of numbers that rises left to right.
@@ -131,13 +132,13 @@ for i in range(0, 10):
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    returnlist = []
-    for i in range(0, 10)：
-        tmp = []
-        for j in range(0, 10):
-            tmp.append(j)
-        returnlist.append(tmp)
-        return returnlist
+    outer_list = []
+    for i in range(10)：
+        inner_list = []
+        for j in range(10):
+            inner_list.append(str(i))
+        outer_list.append(inner_list)
+        return outer_list
 
 
 def loops_5():
@@ -193,13 +194,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    returnlist = []
-    for i in range（0， 10）：
-        tmp = []
-        for j in range (0, i):
-            tmp.append(j)
-            returnlist.append(tmp)
-      return returnlist
+    outer_list = []
+    for i in range（10）：
+        inner_list = []
+        for j in range (i+1)):
+        inner_list.append(str(j))
+            outer_list.append(inner_list)
+      return outer_list
         
 
 
@@ -224,19 +225,16 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    returnlist = []
-    for i in range(0, 5):
-        tmp =[]
-        for j in range(0, 10):
-            tmp.append("*")
-if i + j < 5:
-    tmp[j]= " "
-    asterisk = i+5
-    if j > asterisk:
-        tmp[j]= " "
-        returnlist.append(tmp)
-        return (returnlist)
-
+   outer_list = []
+   for x in range(5):
+       inner_list = []
+       for i in range(9):
+           if abs(i - 4) <= x：
+               inner_list.append('*')
+               else:
+                   inner_list.append(' ')
+                   outer_list.append(inner_list)
+                   return outer_list
 def lp(some_kind_of_list, exercise_name):
     """Help to see what's going on.
 
