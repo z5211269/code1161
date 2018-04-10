@@ -111,6 +111,7 @@ def dig_up_capsule(file_path):
     except Exception as e:
         print(e)
         return False
+        .
 
 
 dig_up_capsule("under_the_patio.json")
