@@ -97,16 +97,21 @@ def abba(source="abba", guard=3):
         You need to change these substitutions to make it work.
         """
         if letter == "a":
-            return "a"
+            return "bba"
         elif letter == "b":
-            return "b"
+            return "aob"
         elif letter == "o":
-            return "o"
+            return "oaa"
         else:
             return letter
 
     # write the rest of the function here
-    pass
+   result = map(apply_rules,source)
+   result = "".join(result)
+    guard -= 1
+    if guard > 0:
+        return abba(result, guard)
+        return result
 
 
 def koch(t, order, size):
@@ -151,8 +156,14 @@ def square_koch(t, order, size):
     """
     trace = ""
     # write the rest of the function here.
+    if order == 0:
+        t.forward(size)
+        else:
+            for angle in [90,-90,-90,90,0]:
+                trac += square_koch(t, order-1, size/3)
+                t.left(angle)
     return str(order) + trace
-    pass
+    
 
 
 def draw_square(steps=4):
